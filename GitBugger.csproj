@@ -10,6 +10,7 @@
     <RepositoryUrl>https://github.com/MrSquirrelyNet/GitBugger</RepositoryUrl>
     <PackageTags>github,bugs</PackageTags>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>

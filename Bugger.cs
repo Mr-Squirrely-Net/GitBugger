@@ -8,7 +8,7 @@ namespace GitBugger {
             try {
                 _client = new GitHubClient(new ProductHeaderValue(headerValue)){Credentials = token};
             }
-            catch (Exception ex) {
+            catch (Exception) {
                 // ignored
             }
         }
@@ -19,16 +19,16 @@ namespace GitBugger {
                     issue.Labels.Add("bug");
                     break;
                 case Label.Enhancement:
-                    issue.Labels.Add("enhancment");
+                    issue.Labels.Add("enhancement");
                     break;
                 default:
                     throw new ArgumentOutOfRangeException(nameof(label), label, null);
             }
 
-            _ = await _client.Issue.Create(repoOwner, repo, issue);
+            await _client.Issue.Create(repoOwner, repo, issue);
         }
 
-        public static NewIssue Issue(string title, string body) => new NewIssue(title){Body = body};
+        public NewIssue Issue(string title, string body) => new NewIssue(title){Body = body};
 
         public enum Label {
             Bug,
