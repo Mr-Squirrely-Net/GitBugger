@@ -15,6 +15,8 @@ namespace SquirrelUtils.GitBugger {
         public string? Token;
 
         private HttpClient? _client;
+        
+        public Bugger(string token) => Token = token;
 
         private HttpClient GetClient() {
             if (_client != null) {

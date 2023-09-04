@@ -7,7 +7,7 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageId>GitBugger</PackageId>
     <Title>GitBugger</Title>
-    <Version>2.0.1</Version>
+    <Version>1.0.1</Version>
     <Authors>MrSquirrely</Authors>
     <Company>MrSquirrely.net</Company>
     <Description>A simple issue creating client for Github</Description>
@@ -16,7 +16,7 @@
     <PackageIcon>icon.png</PackageIcon>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageTags>github;bugs;issue</PackageTags>
-    <PackageReleaseNotes>I forgot to add a way to add your token...</PackageReleaseNotes>
+    <PackageReleaseNotes>A complete re-write of the program! It works now!</PackageReleaseNotes>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
   </PropertyGroup>
 
